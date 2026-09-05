@@ -3,6 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18422871664"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18422871664');
+</script>
+
 <title>Casa 197 Galeteria &amp; Fondue — Canela/RS | Reservas</title>
 <meta name="description" content="Galeto ao meio-dia, fondue de dia e de noite e pratos à la carte no centro de Canela/RS. Rua Felisberto Soares, 197. Reserve sua mesa pelo WhatsApp.">
 <meta name="theme-color" content="#14110F">
@@ -10,7 +20,7 @@
 <meta property="og:title" content="Casa 197 Galeteria &amp; Fondue — Canela/RS">
 <meta property="og:description" content="Galeto ao meio-dia, fondue de dia e de noite e pratos à la carte no centro de Canela. Reserve pelo WhatsApp.">
 <meta property="og:locale" content="pt_BR">
-<link rel="preload" as="image" href="img/hero.webp">
+<link rel="preload" as="image" href="img/hero-galeteria.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -92,11 +102,21 @@ header.solid .menu a:hover{color:var(--brass)}
 .hero::after{
   content:"";position:absolute;inset:0;
   background:
-    linear-gradient(180deg,rgba(10,8,7,.66) 0%,rgba(10,8,7,.34) 26%,rgba(10,8,7,.74) 62%,rgba(10,8,7,.93) 100%),
-    linear-gradient(90deg,rgba(10,8,7,.55) 0%,rgba(10,8,7,.12) 62%,rgba(10,8,7,0) 100%);
+    linear-gradient(180deg,rgba(10,8,7,.6) 0%,rgba(10,8,7,.26) 24%,rgba(10,8,7,.44) 48%,rgba(10,8,7,.78) 76%,rgba(10,8,7,.93) 100%),
+    linear-gradient(90deg,rgba(10,8,7,.58) 0%,rgba(10,8,7,.14) 58%,rgba(10,8,7,0) 100%);
 }
 .hero-inner{position:relative;z-index:2;width:100%;padding:150px 0 0}
-.hero h1{color:#fff;text-shadow:0 2px 40px rgba(0,0,0,.35)}
+.hero h1{
+  color:#fff;text-shadow:0 2px 40px rgba(0,0,0,.35);
+  font-size:clamp(2.15rem,3.9vw,3.15rem);line-height:1.12;max-width:20ch;text-wrap:balance;
+}
+@media(min-width:761px){.hero h1{max-width:24ch}}
+@media(max-width:760px){
+  .hero h1 br{display:none}
+  .hero h1{max-width:none;letter-spacing:-.005em}
+  .hero .lead{font-size:.97rem;margin-top:18px}
+}
+@media(max-width:380px){.hero h1{font-size:1.98rem}}
 .hero h1 em{font-style:italic;color:var(--brass-2)}
 .hero .lead{color:rgba(255,255,255,.9);margin-top:26px;max-width:50ch}
 .hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:38px}
@@ -174,6 +194,7 @@ section{padding:clamp(72px,9vw,124px) 0}
 .stack{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 .stack img:first-child{grid-column:1 / -1;aspect-ratio:16/10;object-fit:cover}
 .stack img:not(:first-child){aspect-ratio:1/1;object-fit:cover}
+.stack-wide img:not(:first-child){aspect-ratio:3/2}
 .badge{
   display:inline-flex;align-items:center;gap:9px;background:var(--cream-2);
   border:1px solid var(--line);padding:9px 16px;border-radius:2px;
@@ -213,15 +234,14 @@ section{padding:clamp(72px,9vw,124px) 0}
 .gal figure{margin:0;overflow:hidden;background:var(--cream-2)}
 .gal figure:hover img{transform:scale(1.06)}
 .gal figure{height:100%}
-.g1{grid-column:span 5;aspect-ratio:4/5}
-.g2{grid-column:span 7}
-.g3{grid-column:span 4;aspect-ratio:1/1}
-.g4{grid-column:span 4;aspect-ratio:1/1}
-.g5{grid-column:span 4;aspect-ratio:1/1}
+.g1{grid-column:span 8;aspect-ratio:3/2}
+.g2{grid-column:span 4}
+.g3,.g4,.g5,.g6,.g7,.g8{grid-column:span 4;aspect-ratio:3/2}
 @media(max-width:760px){
   .gal{grid-template-columns:repeat(2,1fr);gap:10px}
-  .g1,.g2,.g3,.g4{grid-column:span 1;aspect-ratio:1/1}
-  .g5{grid-column:span 2;aspect-ratio:16/10}
+  .g1{grid-column:span 2;aspect-ratio:3/2}
+  .g2,.g3,.g4,.g5,.g6,.g7{grid-column:span 1;aspect-ratio:1/1}
+  .g8{grid-column:span 2;aspect-ratio:16/10}
   .gal figure{height:auto}
 }
 
@@ -240,7 +260,7 @@ section{padding:clamp(72px,9vw,124px) 0}
 /* ---------- cta final ---------- */
 .final{position:relative;color:#fff;text-align:center;overflow:hidden}
 .final .bg{position:absolute;inset:0;background-size:cover;background-position:center}
-.final::after{content:"";position:absolute;inset:0;background:rgba(12,9,7,.76)}
+.final::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,9,7,.78) 0%,rgba(12,9,7,.6) 42%,rgba(12,9,7,.82) 100%)}
 .final .wrap{position:relative;z-index:2}
 .final h2{color:#fff}
 .final .lead{color:rgba(255,255,255,.82);margin:0 auto}
@@ -295,12 +315,12 @@ footer{background:var(--ink);color:rgba(251,247,241,.62);padding:64px 0 110px;fo
 
 <!-- ============ HERO ============ -->
 <div class="hero" id="topo">
-  <div class="hero-img" style="background-image:url('img/hero.webp')" role="img" aria-label="Fondue de queijo e chocolate servido em mesa junto à lareira na Casa 197"></div>
+  <div class="hero-img" style="background-image:url('img/hero-galeteria.webp');background-position:center 42%" role="img" aria-label="Mesa da sequência de galeto com massas, nhoque, ravióli, saladas e vinho na Casa 197"></div>
   <div class="hero-inner">
     <div class="wrap">
       <p class="eyebrow" style="color:var(--brass-2);text-shadow:0 1px 14px rgba(0,0,0,.6)">Canela · Serra Gaúcha</p>
-      <h1>Galeto ao meio-dia.<br><em>Fondue</em> de dia e de noite.</h1>
-      <p class="lead">Sequência de fondue servida à vontade, galeteria italiana no almoço e um cardápio à la carte com risotos, massas e carnes — no centro de Canela.</p>
+      <h1>A tradição da Sequência de Galeto ao Primo Canto <br> de meio-dia e o charme do <em>Fondue</em> a qualquer hora.</h1>
+      <p class="lead">Tudo servido à vontade, com pratos à la carte e carta de vinhos — no centro de Canela.</p>
       <div class="hero-cta">
         <a class="btn btn-primary wa" href="https://wa.me/555499026758?text=Ol%C3%A1!%20Gostaria%20de%20reservar%20uma%20mesa%20na%20Casa%20197." target="_blank" rel="noopener">
           <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.8-.9-3-1.6-4.2-3.6-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.3 5.2 4.6 1.9.8 2.7.9 3.7.8.6-.1 1.8-.7 2-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.4M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2m0 1.8a8.2 8.2 0 0 1 6.9 12.6l-.4.6.6 2.3-2.4-.6-.5.3A8.2 8.2 0 1 1 12 3.8"/></svg>
@@ -320,7 +340,7 @@ footer{background:var(--ink);color:rgba(251,247,241,.62);padding:64px 0 110px;fo
 <!-- ============ SPLIT DIA / NOITE ============ -->
 <div class="split">
   <div class="panel panel-dia">
-    <div class="bg" style="background-image:url('img/dia.webp')"></div>
+    <div class="bg" style="background-image:url('img/dia-galeteria.webp');background-position:center 40%"></div>
     <div class="panel-content reveal">
       <span class="tag">Só no almoço</span>
       <p class="eyebrow">O meio-dia</p>
@@ -330,7 +350,7 @@ footer{background:var(--ink);color:rgba(251,247,241,.62);padding:64px 0 110px;fo
     </div>
   </div>
   <div class="panel panel-noite">
-    <div class="bg" style="background-image:url('img/noite.webp')"></div>
+    <div class="bg" style="background-image:url('img/noite-fondue.webp');background-position:center 38%"></div>
     <div class="panel-content reveal">
       <span class="tag">Almoço e jantar</span>
       <p class="eyebrow">O dia inteiro</p>
@@ -392,9 +412,9 @@ footer{background:var(--ink);color:rgba(251,247,241,.62);padding:64px 0 110px;fo
     <div class="duo">
       <div class="duo-media reveal">
         <div class="stack">
-          <img src="img/galeto.webp" alt="Galeto assado dourado servido em travessa branca na Casa 197" loading="lazy">
-          <img src="img/mesagal.webp" alt="Mesa posta com massas, molhos e galeto no almoço" loading="lazy">
-          <img src="img/massa.webp" alt="Talharim ao molho branco servido em travessa" loading="lazy">
+          <img src="img/galeteria-mesa.webp" alt="Mesa da sequência com galeto assado, massas, ravióli, salada, sopa e pão" loading="lazy">
+          <img src="img/bolonhesa.webp" alt="Espaguete ao molho bolonhesa servido em travessa branca" loading="lazy">
+          <img src="img/maionese.webp" alt="Maionese da casa servida em travessa, com salada e penne ao pesto ao fundo" loading="lazy">
         </div>
       </div>
       <div class="reveal">
@@ -475,17 +495,17 @@ footer{background:var(--ink);color:rgba(251,247,241,.62);padding:64px 0 110px;fo
   <div class="wrap">
     <div class="duo rev">
       <div class="duo-media reveal">
-        <div class="stack">
-          <img src="img/salao2.webp" alt="Salão da Casa 197 com mesas postas e clientes almoçando" loading="lazy" style="aspect-ratio:16/11">
-          <img src="img/salao.webp" alt="Cadeiras forradas com peles de carneiro, tijolo à vista e luminárias no salão" loading="lazy">
-          <img src="img/vinho.webp" alt="Taça de vinho tinto servida junto às massas da casa" loading="lazy">
+        <div class="stack stack-wide">
+          <img src="img/salao-cheio.webp" alt="Salão da Casa 197 cheio no almoço, com lustres, tijolo à vista e vigas de madeira" loading="lazy" style="aspect-ratio:16/10">
+          <img src="img/salao-atendimento.webp" alt="Atendente servindo massa à mesa durante o almoço na Casa 197" loading="lazy">
+          <img src="img/salao-elegante.webp" alt="Mesas postas sob os lustres de cristal, com as cadeiras vestidas da Casa 197" loading="lazy">
         </div>
       </div>
       <div class="reveal">
         <p class="eyebrow">O salão</p>
         <h2>Aconchego de serra, do primeiro ao último prato</h2>
         <div class="rule"></div>
-        <p class="lead">Tijolo à vista, vigas de madeira, luminárias baixas e peles de carneiro nas cadeiras. Um salão pensado para o frio de Canela — daqueles em que o almoço vira tarde e o jantar não tem pressa.</p>
+        <p class="lead">Tijolo à vista, vigas de madeira, lustres de cristal e as cadeiras vestidas de verde. Um salão pensado para o frio de Canela — daqueles em que o almoço vira tarde e o jantar não tem pressa.</p>
         <ul class="list-check">
           <li>No centro de Canela, na Rua Felisberto Soares, 197</li>
           <li>Mesas para casal, família e grupos</li>
@@ -505,11 +525,14 @@ footer{background:var(--ink);color:rgba(251,247,241,.62);padding:64px 0 110px;fo
       <div class="rule center"></div>
     </div>
     <div class="gal">
-      <figure class="g1 reveal"><img src="img/fontop.webp" alt="Mesa de fondue vista de cima com molhos, carnes e chocolate" loading="lazy"></figure>
-      <figure class="g2 reveal"><img src="img/fonwide.webp" alt="Sequência completa de fondue com queijos, carne na pedra e chocolate" loading="lazy"></figure>
-      <figure class="g3 reveal"><img src="img/carnes.webp" alt="Parrilla com costela, chops e batatas fritas" loading="lazy"></figure>
-      <figure class="g4 reveal"><img src="img/salada.webp" alt="Salada verde com morangos e flores comestíveis" loading="lazy"></figure>
-      <figure class="g5 reveal"><img src="img/mesafull.webp" alt="Mesa completa com massas, galeto, sopa, pães e sobremesas" loading="lazy"></figure>
+      <figure class="g1 reveal"><img src="img/galeto-penne.webp" alt="Galeto assado com penne ao molho branco e taça de vinho, com a lareira ao fundo" loading="lazy"></figure>
+      <figure class="g2 reveal"><img src="img/morango.webp" alt="Morango no garfo sendo mergulhado no fondue de chocolate" loading="lazy"></figure>
+      <figure class="g3 reveal"><img src="img/galeto-top.webp" alt="Prato de galeto com espaguete à bolonhesa, salada, maionese e polenta frita" loading="lazy"></figure>
+      <figure class="g4 reveal"><img src="img/ravioli.webp" alt="Ravióli ao sugo com galeto, maionese e polenta frita" loading="lazy"></figure>
+      <figure class="g5 reveal"><img src="img/queijo.webp" alt="Fondue de queijo com polenta frita, batata, brócolis, almôndegas e goiabada" loading="lazy"></figure>
+      <figure class="g6 reveal"><img src="img/fondue-salao.webp" alt="Mesa de fondue completa montada no salão da Casa 197" loading="lazy"></figure>
+      <figure class="g7 reveal"><img src="img/fondue-pedra.webp" alt="Carne na pedra com os doze molhos e os fondues de queijo e chocolate" loading="lazy"></figure>
+      <figure class="g8 reveal"><img src="img/chocolate.webp" alt="Fondue de chocolate com frutas, wafer, marshmallow e confeitos" loading="lazy"></figure>
     </div>
   </div>
 </section>
@@ -540,7 +563,7 @@ footer{background:var(--ink);color:rgba(251,247,241,.62);padding:64px 0 110px;fo
         </div>
       </div>
       <div class="reveal">
-        <img src="img/mesavin.webp" alt="Mesa posta com vinho, galeto e massas na Casa 197" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover">
+        <img src="img/fachada.webp" alt="Fachada verde da Casa 197 Galeteria &amp; Fondue na Rua Felisberto Soares, em Canela" loading="lazy" style="width:100%;aspect-ratio:3/2;object-fit:cover">
         <div style="margin-top:22px;display:flex;gap:12px;flex-wrap:wrap">
           <a class="btn btn-primary wa" href="https://wa.me/555499026758?text=Ol%C3%A1!%20Gostaria%20de%20reservar%20uma%20mesa%20na%20Casa%20197." target="_blank" rel="noopener">
             <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.8-.9-3-1.6-4.2-3.6-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.3 5.2 4.6 1.9.8 2.7.9 3.7.8.6-.1 1.8-.7 2-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.4M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2m0 1.8a8.2 8.2 0 0 1 6.9 12.6l-.4.6.6 2.3-2.4-.6-.5.3A8.2 8.2 0 1 1 12 3.8"/></svg>
@@ -555,7 +578,7 @@ footer{background:var(--ink);color:rgba(251,247,241,.62);padding:64px 0 110px;fo
 
 <!-- ============ CTA FINAL ============ -->
 <section class="final">
-  <div class="bg" style="background-image:url('img/fonwide.webp')"></div>
+  <div class="bg" style="background-image:url('img/cta-fondue.webp');background-position:center 45%"></div>
   <div class="wrap">
     <p class="eyebrow" style="color:var(--brass-2)">Reserve sua mesa</p>
     <h2>Sua mesa em Canela<br>está a uma mensagem</h2>
@@ -632,14 +655,24 @@ var io=new IntersectionObserver(function(es){
 document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
 
 /* ---------------------------------------------------------------
-   CONVERSÃO GOOGLE ADS — cole aqui a tag global (gtag.js) da conta
-   e troque AW-XXXXXXXXX/XXXXXXXXXXXX pelo rótulo da conversão
-   "Clique no WhatsApp". Sem a tag instalada, nada quebra.
+   CONVERSÃO GOOGLE ADS — clique no WhatsApp
+   Tag global AW-18422871664 instalada no <head>.
+   Conversão "click_whatsapp": AW-18422871664/WmwMCIvRpO8cEPDs2tBE
+   Dispara em todos os botões que levam ao WhatsApp (classe .wa),
+   junto de um evento clique_whatsapp com a origem do clique.
 ----------------------------------------------------------------*/
+var GADS_ROTULO_WHATSAPP = 'WmwMCIvRpO8cEPDs2tBE'; // conversão "click_whatsapp"
+
 document.querySelectorAll('a.wa').forEach(function(a){
   a.addEventListener('click',function(){
+    if(typeof gtag==='function' && GADS_ROTULO_WHATSAPP){
+      gtag('event','conversion',{
+        'send_to':'AW-18422871664/'+GADS_ROTULO_WHATSAPP,
+        'event_callback':function(){}
+      });
+    }
     if(typeof gtag==='function'){
-      gtag('event','conversion',{'send_to':'AW-XXXXXXXXX/XXXXXXXXXXXX'});
+      gtag('event','clique_whatsapp',{'origem':a.getAttribute('href').indexOf('galeto')>-1?'galeto':(a.getAttribute('href').indexOf('fondue')>-1?'fondue':'geral')});
     }
     if(typeof fbq==='function'){ fbq('track','Contact'); }
   });
