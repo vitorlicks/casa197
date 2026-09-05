@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Casa 197 Galeteria &amp; Fondue — Canela/RS | Reservas</title>
+<meta name="description" content="Galeto ao meio-dia, fondue de dia e de noite e pratos à la carte no centro de Canela/RS. Rua Felisberto Soares, 197. Reserve sua mesa pelo WhatsApp.">
+<meta name="theme-color" content="#14110F">
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="Casa 197 Galeteria &amp; Fondue — Canela/RS">
+<meta property="og:description" content="Galeto ao meio-dia, fondue de dia e de noite e pratos à la carte no centro de Canela. Reserve pelo WhatsApp.">
+<meta property="og:locale" content="pt_BR">
+<link rel="preload" as="image" href="img/hero.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#14110F;
+  --ink-2:#241E19;
+  --ink-3:#4A403A;
+  --cream:#FBF7F1;
+  --cream-2:#F2EADD;
+  --brass:#A9793C;
+  --brass-2:#C99C5B;
+  --line:rgba(20,17,15,.14);
+  --maxw:1200px;
+  --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--cream);color:var(--ink);
+  font-family:var(--sans);font-size:16px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+/* ---------- tipografia ---------- */
+.eyebrow{
+  font-size:11px;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--brass);font-weight:500;margin:0 0 18px;
+}
+h1,h2,h3{font-family:var(--serif);font-weight:300;margin:0;letter-spacing:.01em}
+h1{font-size:clamp(2.6rem,6.4vw,5rem);line-height:1.03}
+h2{font-size:clamp(2rem,4.4vw,3.3rem);line-height:1.1}
+h3{font-size:clamp(1.35rem,2.4vw,1.75rem);line-height:1.2}
+.lead{font-size:clamp(1rem,1.5vw,1.12rem);color:var(--ink-3);max-width:56ch;font-weight:300}
+.rule{width:54px;height:1px;background:var(--brass);margin:22px 0}
+.rule.center{margin:22px auto}
+
+/* ---------- botões ---------- */
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:16px 30px;border-radius:2px;font-size:13px;font-weight:500;
+  letter-spacing:.14em;text-transform:uppercase;transition:.28s ease;
+  border:1px solid transparent;cursor:pointer;
+}
+.btn-primary{background:var(--brass);color:#fff;border-color:var(--brass)}
+.btn-primary:hover{background:#8F6430;border-color:#8F6430;transform:translateY(-2px)}
+.btn-ghost{border-color:rgba(255,255,255,.45);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.12);border-color:#fff}
+.btn-dark{border-color:var(--ink);color:var(--ink)}
+.btn-dark:hover{background:var(--ink);color:var(--cream)}
+.wa-icon{width:17px;height:17px;fill:currentColor;flex:none}
+
+/* ---------- header ---------- */
+header{
+  position:fixed;top:0;left:0;right:0;z-index:60;
+  padding:20px 0;transition:.35s ease;
+}
+header.solid{background:rgba(251,247,241,.97);box-shadow:0 1px 0 var(--line);padding:12px 0;backdrop-filter:blur(8px)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;flex-direction:column;line-height:1;color:#fff;transition:.35s}
+header.solid .brand{color:var(--ink)}
+.brand b{font-family:var(--serif);font-weight:400;font-size:24px;letter-spacing:.16em}
+.brand small{font-size:8.5px;letter-spacing:.3em;text-transform:uppercase;margin-top:5px;opacity:.85}
+.menu{display:flex;gap:32px;align-items:center}
+.menu a{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.88);transition:.25s}
+header.solid .menu a{color:var(--ink-3)}
+.menu a:hover{color:var(--brass-2)}
+header.solid .menu a:hover{color:var(--brass)}
+.nav .btn{padding:12px 22px;font-size:11px}
+@media(max-width:900px){.menu{display:none}.nav .btn{padding:11px 18px}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero-img{position:absolute;inset:0;background-size:cover;background-position:center;transform:scale(1.04)}
+.hero::after{
+  content:"";position:absolute;inset:0;
+  background:
+    linear-gradient(180deg,rgba(10,8,7,.66) 0%,rgba(10,8,7,.34) 26%,rgba(10,8,7,.74) 62%,rgba(10,8,7,.93) 100%),
+    linear-gradient(90deg,rgba(10,8,7,.55) 0%,rgba(10,8,7,.12) 62%,rgba(10,8,7,0) 100%);
+}
+.hero-inner{position:relative;z-index:2;width:100%;padding:150px 0 0}
+.hero h1{color:#fff;text-shadow:0 2px 40px rgba(0,0,0,.35)}
+.hero h1 em{font-style:italic;color:var(--brass-2)}
+.hero .lead{color:rgba(255,255,255,.9);margin-top:26px;max-width:50ch}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:38px}
+.hero-facts{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+  margin-top:64px;border-top:1px solid rgba(255,255,255,.2);
+  background:rgba(255,255,255,.18);
+}
+.fact{background:transparent;padding:26px 4px 30px}
+.fact b{display:block;font-family:var(--serif);font-size:1.35rem;font-weight:400;letter-spacing:.02em}
+.fact span{font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.62)}
+@media(max-width:760px){
+  .hero-facts{grid-template-columns:1fr;background:transparent}
+  .fact{padding:16px 0;border-bottom:1px solid rgba(255,255,255,.14)}
+  .fact b{font-size:1.15rem}
+  .hero-inner{padding-top:120px}
+  .hero-cta .btn{flex:1 1 100%;justify-content:center}
+}
+
+/* ---------- seções ---------- */
+section{padding:clamp(72px,9vw,124px) 0}
+.sec-head{max-width:620px}
+.sec-head.center{margin:0 auto;text-align:center}
+.sec-head.center .rule{margin:22px auto}
+
+/* ---------- split dia/noite ---------- */
+.split{display:grid;grid-template-columns:1fr 1fr;min-height:88vh;padding:0}
+.panel{position:relative;display:flex;align-items:flex-end;padding:clamp(36px,5vw,68px);overflow:hidden;isolation:isolate}
+.panel .bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform 1.2s cubic-bezier(.2,.7,.3,1);z-index:-2}
+.panel:hover .bg{transform:scale(1.05)}
+.panel::before{content:"";position:absolute;inset:0;z-index:-1}
+.panel-dia::before{background:linear-gradient(180deg,rgba(46,30,16,.18) 0%,rgba(46,30,16,.55) 44%,rgba(28,18,10,.93) 100%)}
+.panel-noite::before{background:linear-gradient(180deg,rgba(8,6,5,.4) 0%,rgba(8,6,5,.62) 44%,rgba(8,6,5,.95) 100%)}
+.panel-content{color:#fff;max-width:440px}
+.panel-content .eyebrow{color:var(--brass-2)}
+.panel-content p{color:rgba(255,255,255,.86);font-weight:300;margin:16px 0 26px}
+.panel-content h2{color:#fff}
+.tag{
+  display:inline-block;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;
+  border:1px solid rgba(255,255,255,.4);padding:7px 14px;border-radius:2px;margin-bottom:20px;
+  color:rgba(255,255,255,.92);
+}
+@media(max-width:860px){.split{grid-template-columns:1fr}.panel{min-height:74vh}}
+
+/* ---------- fondue cards ---------- */
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:56px}
+.tier{
+  background:#fff;border:1px solid var(--line);padding:38px 32px 34px;
+  display:flex;flex-direction:column;position:relative;transition:.35s ease;
+}
+.tier:hover{transform:translateY(-5px);box-shadow:0 22px 50px -28px rgba(20,17,15,.4)}
+.tier .num{
+  font-family:var(--serif);font-size:13px;letter-spacing:.28em;color:var(--brass);
+  display:block;margin-bottom:14px;
+}
+.tier h3{margin-bottom:6px}
+.tier .sub{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-3);opacity:.6;margin-bottom:26px}
+.course{padding:18px 0;border-top:1px solid var(--line)}
+.course b{display:block;font-size:12px;letter-spacing:.13em;text-transform:uppercase;margin-bottom:7px}
+.course p{margin:0;font-size:14px;line-height:1.6;color:var(--ink-3);font-weight:300}
+.tier-featured{background:var(--ink);border-color:var(--ink);color:var(--cream)}
+.tier-featured h3{color:#fff}
+.tier-featured .sub{color:rgba(251,247,241,.6)}
+.tier-featured .course{border-color:rgba(251,247,241,.16)}
+.tier-featured .course p{color:rgba(251,247,241,.75)}
+.tier-featured .num{color:var(--brass-2)}
+.note{margin-top:34px;font-size:13.5px;color:var(--ink-3);font-weight:300}
+@media(max-width:980px){.tiers{grid-template-columns:1fr;gap:20px}}
+
+/* ---------- galeteria ---------- */
+.duo{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(34px,5vw,72px);align-items:center}
+.duo.rev .duo-media{order:2}
+.duo-media{position:relative}
+.duo-media img{width:100%;height:100%;object-fit:cover}
+.stack{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.stack img:first-child{grid-column:1 / -1;aspect-ratio:16/10;object-fit:cover}
+.stack img:not(:first-child){aspect-ratio:1/1;object-fit:cover}
+.badge{
+  display:inline-flex;align-items:center;gap:9px;background:var(--cream-2);
+  border:1px solid var(--line);padding:9px 16px;border-radius:2px;
+  font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);margin-bottom:22px;
+}
+.badge i{width:6px;height:6px;border-radius:50%;background:var(--brass);flex:none}
+.list-check{list-style:none;padding:0;margin:26px 0 0}
+.list-check li{
+  padding:13px 0 13px 26px;border-bottom:1px solid var(--line);
+  font-size:15px;font-weight:300;color:var(--ink-2);position:relative;
+}
+.list-check li::before{content:"";position:absolute;left:0;top:21px;width:12px;height:1px;background:var(--brass)}
+@media(max-width:860px){.duo{grid-template-columns:1fr}.duo.rev .duo-media{order:0}}
+
+/* ---------- à la carte ---------- */
+.carte{background:var(--ink);color:var(--cream)}
+.carte h2,.carte h3{color:#fff}
+.carte .lead{color:rgba(251,247,241,.7)}
+.carte-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(34px,5vw,76px);margin-top:56px}
+.carte h3{font-size:1.15rem;letter-spacing:.2em;text-transform:uppercase;font-family:var(--sans);font-weight:500;font-size:12px;color:var(--brass-2);margin-bottom:8px}
+.dish{display:flex;align-items:baseline;gap:10px;padding:15px 0;border-bottom:1px solid rgba(251,247,241,.12)}
+.dish .nm{font-family:var(--serif);font-size:1.22rem;font-weight:400;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.dish .dots{flex:1;border-bottom:1px dotted rgba(251,247,241,.3);transform:translateY(-4px)}
+.dish .pr{font-size:13.5px;color:var(--brass-2);white-space:nowrap;letter-spacing:.02em}
+.dish small{display:block;font-size:12.5px;color:rgba(251,247,241,.5);font-weight:300;margin-top:3px;white-space:normal}
+.dish-l{min-width:0}
+.wine{
+  margin-top:52px;border:1px solid rgba(251,247,241,.18);padding:34px;
+  display:flex;gap:28px;align-items:center;flex-wrap:wrap;justify-content:space-between;
+}
+.wine p{margin:8px 0 0;color:rgba(251,247,241,.66);font-weight:300;max-width:52ch;font-size:14.5px}
+@media(max-width:860px){.carte-grid{grid-template-columns:1fr;gap:8px}}
+
+/* ---------- galeria ---------- */
+.gal{display:grid;grid-template-columns:repeat(12,1fr);gap:14px;margin-top:52px}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.3,1)}
+.gal figure{margin:0;overflow:hidden;background:var(--cream-2)}
+.gal figure:hover img{transform:scale(1.06)}
+.gal figure{height:100%}
+.g1{grid-column:span 5;aspect-ratio:4/5}
+.g2{grid-column:span 7}
+.g3{grid-column:span 4;aspect-ratio:1/1}
+.g4{grid-column:span 4;aspect-ratio:1/1}
+.g5{grid-column:span 4;aspect-ratio:1/1}
+@media(max-width:760px){
+  .gal{grid-template-columns:repeat(2,1fr);gap:10px}
+  .g1,.g2,.g3,.g4{grid-column:span 1;aspect-ratio:1/1}
+  .g5{grid-column:span 2;aspect-ratio:16/10}
+  .gal figure{height:auto}
+}
+
+/* ---------- ambiente ---------- */
+.amb{background:var(--cream-2)}
+
+/* ---------- localização ---------- */
+.local{display:grid;grid-template-columns:1fr 1fr;gap:clamp(34px,5vw,72px);align-items:center}
+.info-row{padding:20px 0;border-bottom:1px solid var(--line)}
+.info-row span{display:block;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--brass);margin-bottom:7px}
+.info-row b{font-family:var(--serif);font-size:1.28rem;font-weight:400;letter-spacing:.01em}
+.info-row a{border-bottom:1px solid var(--line)}
+.info-row a:hover{border-color:var(--brass);color:var(--brass)}
+@media(max-width:860px){.local{grid-template-columns:1fr}}
+
+/* ---------- cta final ---------- */
+.final{position:relative;color:#fff;text-align:center;overflow:hidden}
+.final .bg{position:absolute;inset:0;background-size:cover;background-position:center}
+.final::after{content:"";position:absolute;inset:0;background:rgba(12,9,7,.76)}
+.final .wrap{position:relative;z-index:2}
+.final h2{color:#fff}
+.final .lead{color:rgba(255,255,255,.82);margin:0 auto}
+
+/* ---------- footer ---------- */
+footer{background:var(--ink);color:rgba(251,247,241,.62);padding:64px 0 110px;font-size:13.5px;font-weight:300}
+.foot{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;align-items:flex-start}
+.foot .brand{color:#fff}
+.foot a:hover{color:var(--brass-2)}
+.foot-links{display:flex;gap:26px;flex-wrap:wrap}
+.foot-btm{margin-top:44px;padding-top:24px;border-top:1px solid rgba(251,247,241,.12);font-size:12px;opacity:.7}
+@media(max-width:600px){footer{padding-bottom:120px}}
+
+/* ---------- barra fixa mobile ---------- */
+.mobile-bar{
+  position:fixed;left:0;right:0;bottom:0;z-index:70;display:none;
+  padding:12px 16px calc(12px + env(safe-area-inset-bottom));
+  background:rgba(20,17,15,.96);backdrop-filter:blur(8px);
+}
+.mobile-bar .btn{width:100%;justify-content:center;padding:15px}
+@media(max-width:900px){.mobile-bar{display:block}}
+
+/* ---------- reveal ---------- */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.3,1)}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<header id="hdr">
+  <div class="wrap nav">
+    <a class="brand" href="#topo" aria-label="Casa 197 Galeteria e Fondue">
+      <b>CASA 197</b><small>Galeteria &amp; Fondue</small>
+    </a>
+    <nav class="menu">
+      <a href="#fondue">Fondue</a>
+      <a href="#galeto">Galeteria</a>
+      <a href="#carte">À la carte</a>
+      <a href="#ambiente">O salão</a>
+      <a href="#local">Onde estamos</a>
+    </nav>
+    <a class="btn btn-primary wa" href="https://wa.me/555499026758?text=Ol%C3%A1!%20Gostaria%20de%20reservar%20uma%20mesa%20na%20Casa%20197." target="_blank" rel="noopener">
+      <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.8-.9-3-1.6-4.2-3.6-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.3 5.2 4.6 1.9.8 2.7.9 3.7.8.6-.1 1.8-.7 2-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.4M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2m0 1.8a8.2 8.2 0 0 1 6.9 12.6l-.4.6.6 2.3-2.4-.6-.5.3A8.2 8.2 0 1 1 12 3.8"/></svg>
+      Reservar
+    </a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<div class="hero" id="topo">
+  <div class="hero-img" style="background-image:url('img/hero.webp')" role="img" aria-label="Fondue de queijo e chocolate servido em mesa junto à lareira na Casa 197"></div>
+  <div class="hero-inner">
+    <div class="wrap">
+      <p class="eyebrow" style="color:var(--brass-2);text-shadow:0 1px 14px rgba(0,0,0,.6)">Canela · Serra Gaúcha</p>
+      <h1>Galeto ao meio-dia.<br><em>Fondue</em> de dia e de noite.</h1>
+      <p class="lead">Sequência de fondue servida à vontade, galeteria italiana no almoço e um cardápio à la carte com risotos, massas e carnes — no centro de Canela.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary wa" href="https://wa.me/555499026758?text=Ol%C3%A1!%20Gostaria%20de%20reservar%20uma%20mesa%20na%20Casa%20197." target="_blank" rel="noopener">
+          <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.8-.9-3-1.6-4.2-3.6-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.3 5.2 4.6 1.9.8 2.7.9 3.7.8.6-.1 1.8-.7 2-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.4M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2m0 1.8a8.2 8.2 0 0 1 6.9 12.6l-.4.6.6 2.3-2.4-.6-.5.3A8.2 8.2 0 1 1 12 3.8"/></svg>
+          Reservar pelo WhatsApp
+        </a>
+        <a class="btn btn-ghost" href="#fondue">Ver o cardápio</a>
+      </div>
+      <div class="hero-facts">
+        <div class="fact"><b>Fondue</b><span>Almoço e jantar</span></div>
+        <div class="fact"><b>Galeto</b><span>Somente ao meio-dia</span></div>
+        <div class="fact"><b>À la carte</b><span>Risotos, massas e carnes</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ SPLIT DIA / NOITE ============ -->
+<div class="split">
+  <div class="panel panel-dia">
+    <div class="bg" style="background-image:url('img/dia.webp')"></div>
+    <div class="panel-content reveal">
+      <span class="tag">Só no almoço</span>
+      <p class="eyebrow">O meio-dia</p>
+      <h2>A galeteria</h2>
+      <p>Galeto assado, massas com molhos da casa, polenta, sopa de capeletti e salada — a sequência italiana da serra, servida à mesa e à vontade.</p>
+      <a class="btn btn-ghost wa" href="https://wa.me/555499026758?text=Ol%C3%A1!%20Gostaria%20de%20reservar%20uma%20mesa%20para%20o%20galeto%20no%20almo%C3%A7o." target="_blank" rel="noopener">Reservar o almoço</a>
+    </div>
+  </div>
+  <div class="panel panel-noite">
+    <div class="bg" style="background-image:url('img/noite.webp')"></div>
+    <div class="panel-content reveal">
+      <span class="tag">Almoço e jantar</span>
+      <p class="eyebrow">O dia inteiro</p>
+      <h2>O fondue</h2>
+      <p>Três tempos servidos à vontade: fondue de queijos, carne na pedra com 12 molhos e fondue de chocolate para fechar a noite.</p>
+      <a class="btn btn-ghost wa" href="https://wa.me/555499026758?text=Ol%C3%A1!%20Gostaria%20de%20reservar%20uma%20mesa%20para%20a%20sequ%C3%AAncia%20de%20fondue." target="_blank" rel="noopener">Reservar o fondue</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ FONDUE ============ -->
+<section id="fondue">
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <p class="eyebrow">Servido à vontade · valores por pessoa</p>
+      <h2>A sequência de fondue</h2>
+      <div class="rule center"></div>
+      <p class="lead" style="margin:0 auto">Três tempos que atravessam o jantar inteiro: queijos derretidos, carnes na pedra quente e chocolate. Escolha a sequência e sente-se — o resto vem à mesa.</p>
+    </div>
+
+    <div class="tiers">
+      <article class="tier reveal">
+        <span class="num">I</span>
+        <h3>Tradicional</h3>
+        <p class="sub">Três tempos</p>
+        <div class="course"><b>Queijos</b><p>Blend de queijos com pãezinhos em cubos, batata coquinho salteada em ervas finas, brócolis, polenta frita e goiabada.</p></div>
+        <div class="course"><b>Carne na pedra</b><p>Alcatra, filé de frango e calabresa, com 12 tipos de molhos, geleias e farofinha.</p></div>
+        <div class="course"><b>Chocolate</b><p>Chocolate ao leite com frutas da estação, wafer e marshmallow.</p></div>
+      </article>
+
+      <article class="tier tier-featured reveal">
+        <span class="num">II</span>
+        <h3>Gourmet</h3>
+        <p class="sub">A mais pedida</p>
+        <div class="course"><b>Queijos</b><p>Blend de queijos com pãezinhos em cubos, batata coquinho salteada em ervas finas, brócolis, polenta frita e goiabada.</p></div>
+        <div class="course"><b>Carne na pedra</b><p>Picanha, alcatra, filé de frango e calabresa, com 12 tipos de molhos, geleias e farofinha.</p></div>
+        <div class="course"><b>Chocolate</b><p>Ao leite com borda de Nutella e branco com M&amp;M's — frutas da estação, leite ninho, tubetes, wafer e marshmallow.</p></div>
+      </article>
+
+      <article class="tier reveal">
+        <span class="num">III</span>
+        <h3>Premium</h3>
+        <p class="sub">A mesa completa</p>
+        <div class="course"><b>Queijos</b><p>Blend de queijos com pãezinhos, batata coquinho, brócolis, polenta frita, goiabada, almôndegas de carne e linguiça artesanal.</p></div>
+        <div class="course"><b>Carne na pedra</b><p>Picanha, filé mignon, filé de frango e calabresa, com 12 tipos de molhos, geleias e farofinha.</p></div>
+        <div class="course"><b>Chocolate</b><p>Ao leite com borda de Nutella, branco com M&amp;M's e doce de leite — frutas, leite ninho, tubetes, wafer, marshmallow e mini churros.</p></div>
+      </article>
+    </div>
+
+    <p class="note reveal">Sequência servida à vontade, valores por pessoa. Consulte os valores do dia e reserve pelo WhatsApp —
+      <a class="wa" href="https://wa.me/555499026758?text=Ol%C3%A1!%20Queria%20saber%20os%20valores%20da%20sequ%C3%AAncia%20de%20fondue." target="_blank" rel="noopener" style="color:var(--brass);border-bottom:1px solid var(--line)">falar com a Casa 197</a>.
+    </p>
+  </div>
+</section>
+
+<!-- ============ GALETERIA ============ -->
+<section id="galeto" style="background:var(--cream-2)">
+  <div class="wrap">
+    <div class="duo">
+      <div class="duo-media reveal">
+        <div class="stack">
+          <img src="img/galeto.webp" alt="Galeto assado dourado servido em travessa branca na Casa 197" loading="lazy">
+          <img src="img/mesagal.webp" alt="Mesa posta com massas, molhos e galeto no almoço" loading="lazy">
+          <img src="img/massa.webp" alt="Talharim ao molho branco servido em travessa" loading="lazy">
+        </div>
+      </div>
+      <div class="reveal">
+        <span class="badge"><i></i> Servido somente no almoço</span>
+        <p class="eyebrow">A galeteria</p>
+        <h2>A sequência italiana do meio-dia</h2>
+        <div class="rule"></div>
+        <p class="lead">O galeto assado no ponto, dourado por fora e suculento por dentro, chega acompanhado do que a serra ensinou a servir junto: massas, polenta, sopa e sobremesa. Uma refeição que se estende pela tarde.</p>
+        <ul class="list-check">
+          <li>Galeto assado servido à mesa</li>
+          <li>Massas com molhos da casa — bolonhesa, quatro queijos, pesto e sugo</li>
+          <li>Nhoque, ravióli e capeletti</li>
+          <li>Sopa de capeletti, saladas e polenta</li>
+          <li>Sobremesa para fechar</li>
+        </ul>
+        <div style="margin-top:34px">
+          <a class="btn btn-dark wa" href="https://wa.me/555499026758?text=Ol%C3%A1!%20Gostaria%20de%20reservar%20uma%20mesa%20para%20o%20galeto%20no%20almo%C3%A7o." target="_blank" rel="noopener">Reservar mesa para o almoço</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ À LA CARTE ============ -->
+<section id="carte" class="carte">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="eyebrow">Cardápio completo</p>
+      <h2>À la carte</h2>
+      <div class="rule"></div>
+      <p class="lead">Para quem prefere escolher prato a prato: risotos, massas, carnes na pedra e entradas para dividir.</p>
+    </div>
+
+    <div class="carte-grid">
+      <div class="reveal">
+        <h3>Para dividir</h3>
+        <div class="dish"><div class="dish-l"><span class="nm">Fonduta 197</span><small>Nhoque artesanal ao molho da casa com medalhões de filé mignon ao madeira · 2 pessoas</small></div><i class="dots"></i><span class="pr">R$ 259,90</span></div>
+        <div class="dish"><div class="dish-l"><span class="nm">Picanha na Pedra</span><small>Arroz, feijão, fritas, cebola grelhada, farofinha e vinagrete · 2 pessoas</small></div><i class="dots"></i><span class="pr">R$ 194,90</span></div>
+        <div class="dish"><div class="dish-l"><span class="nm">Filé à Parmegiana</span><small>Filé mignon ao pomodoro com mussarela, arroz e fritas · 2 pessoas</small></div><i class="dots"></i><span class="pr">R$ 179,90</span></div>
+        <div class="dish"><div class="dish-l"><span class="nm">Mix de Carnes</span><small>Picanha, entrecot e frango com arroz, fritas e farofinha · 2 pessoas</small></div><i class="dots"></i><span class="pr">R$ 168,90</span></div>
+        <div class="dish"><div class="dish-l"><span class="nm">Talharim com Iscas de Filé</span><small>Ao molho quatro queijos · 2 pessoas</small></div><i class="dots"></i><span class="pr">R$ 169,90</span></div>
+
+        <h3 style="margin-top:44px">Entradas</h3>
+        <div class="dish"><div class="dish-l"><span class="nm">Iscas de Filé Mignon</span><small>300 g · torradinha, pasta de ervas, vinagrete e farofinha</small></div><i class="dots"></i><span class="pr">R$ 99,90</span></div>
+        <div class="dish"><div class="dish-l"><span class="nm">Croqueta de Costela</span><small>6 unidades com molho especial</small></div><i class="dots"></i><span class="pr">R$ 74,90</span></div>
+        <div class="dish"><div class="dish-l"><span class="nm">Creme de Queijo</span><small>Servido no pão italiano</small></div><i class="dots"></i><span class="pr">R$ 69,90</span></div>
+        <div class="dish"><div class="dish-l"><span class="nm">Bruschetta Italiana</span><small>Tomates frescos, azeite, manjericão e parmesão</small></div><i class="dots"></i><span class="pr">R$ 45,90</span></div>
+      </div>
+
+      <div class="reveal">
+        <h3>Pratos individuais</h3>
+        <div class="dish"><div class="dish-l"><span class="nm">Risoto da Casa</span><small>Medalhão de filé mignon ao madeira, arroz arbóreo e crispy de alho-poró</small></div><i class="dots"></i><span class="pr">R$ 99,90</span></div>
+        <div class="dish"><div class="dish-l"><span class="nm">Risoto de Camarão</span><small>Arbóreo ao pomodoro, finalizado com manteiga e parmesão</small></div><i class="dots"></i><span class="pr">R$ 89,90</span></div>
+        <div class="dish"><div class="dish-l"><span class="nm">Parmegiana Casa 197</span><small>Bife empanado com raclete derretido e espaguete ao pomodoro</small></div><i class="dots"></i><span class="pr">R$ 84,90</span></div>
+        <div class="dish"><div class="dish-l"><span class="nm">Entrecot au Poivre</span><small>250 g flambado ao conhaque com batatas assadas</small></div><i class="dots"></i><span class="pr">R$ 79,90</span></div>
+        <div class="dish"><div class="dish-l"><span class="nm">Risoto de Costela</span><small>Costela desfiada, pomodoro e demi-glace</small></div><i class="dots"></i><span class="pr">R$ 79,90</span></div>
+        <div class="dish"><div class="dish-l"><span class="nm">Massa Carbonara</span><small>Espaguete, bacon e creme de ovos com parmesão</small></div><i class="dots"></i><span class="pr">R$ 69,90</span></div>
+
+        <h3 style="margin-top:44px">Sobremesas</h3>
+        <div class="dish"><div class="dish-l"><span class="nm">Petit Gateau</span><small>Com sorvete de creme e farofinha crocante</small></div><i class="dots"></i><span class="pr">R$ 36,90</span></div>
+        <div class="dish"><div class="dish-l"><span class="nm">Fondue na Taça</span><small>Frutas da estação com ganache de chocolate ao leite</small></div><i class="dots"></i><span class="pr">R$ 34,90</span></div>
+        <div class="dish"><div class="dish-l"><span class="nm">Brownie</span><small>Com sorvete de creme</small></div><i class="dots"></i><span class="pr">R$ 34,90</span></div>
+      </div>
+    </div>
+
+    <div class="wine reveal">
+      <div>
+        <h3 style="margin:0">A carta de vinhos</h3>
+        <p>Mais de 40 rótulos entre Serra Gaúcha, Argentina, Chile, Portugal, França, Itália e Espanha — espumantes, brancos, rosés e tintos. Curadoria em parceria com a Passion Vinhos.</p>
+      </div>
+      <a class="btn btn-ghost wa" href="https://wa.me/555499026758?text=Ol%C3%A1!%20Gostaria%20de%20ver%20a%20carta%20de%20vinhos%20da%20Casa%20197." target="_blank" rel="noopener">Pedir a carta</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AMBIENTE ============ -->
+<section id="ambiente" class="amb">
+  <div class="wrap">
+    <div class="duo rev">
+      <div class="duo-media reveal">
+        <div class="stack">
+          <img src="img/salao2.webp" alt="Salão da Casa 197 com mesas postas e clientes almoçando" loading="lazy" style="aspect-ratio:16/11">
+          <img src="img/salao.webp" alt="Cadeiras forradas com peles de carneiro, tijolo à vista e luminárias no salão" loading="lazy">
+          <img src="img/vinho.webp" alt="Taça de vinho tinto servida junto às massas da casa" loading="lazy">
+        </div>
+      </div>
+      <div class="reveal">
+        <p class="eyebrow">O salão</p>
+        <h2>Aconchego de serra, do primeiro ao último prato</h2>
+        <div class="rule"></div>
+        <p class="lead">Tijolo à vista, vigas de madeira, luminárias baixas e peles de carneiro nas cadeiras. Um salão pensado para o frio de Canela — daqueles em que o almoço vira tarde e o jantar não tem pressa.</p>
+        <ul class="list-check">
+          <li>No centro de Canela, na Rua Felisberto Soares, 197</li>
+          <li>Mesas para casal, família e grupos</li>
+          <li>Reservas pelo WhatsApp</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALERIA ============ -->
+<section>
+  <div class="wrap">
+    <div class="sec-head center reveal">
+      <p class="eyebrow">A mesa da Casa 197</p>
+      <h2>Um pouco do que servimos</h2>
+      <div class="rule center"></div>
+    </div>
+    <div class="gal">
+      <figure class="g1 reveal"><img src="img/fontop.webp" alt="Mesa de fondue vista de cima com molhos, carnes e chocolate" loading="lazy"></figure>
+      <figure class="g2 reveal"><img src="img/fonwide.webp" alt="Sequência completa de fondue com queijos, carne na pedra e chocolate" loading="lazy"></figure>
+      <figure class="g3 reveal"><img src="img/carnes.webp" alt="Parrilla com costela, chops e batatas fritas" loading="lazy"></figure>
+      <figure class="g4 reveal"><img src="img/salada.webp" alt="Salada verde com morangos e flores comestíveis" loading="lazy"></figure>
+      <figure class="g5 reveal"><img src="img/mesafull.webp" alt="Mesa completa com massas, galeto, sopa, pães e sobremesas" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LOCALIZAÇÃO ============ -->
+<section id="local" style="background:var(--cream-2)">
+  <div class="wrap">
+    <div class="local">
+      <div class="reveal">
+        <p class="eyebrow">Onde estamos</p>
+        <h2>No centro de Canela</h2>
+        <div class="rule"></div>
+        <div class="info-row">
+          <span>Endereço</span>
+          <b><a href="https://www.google.com/maps/search/?api=1&amp;query=Casa+197+Galeteria+e+Fondue,+Rua+Felisberto+Soares,+197,+Centro,+Canela+-+RS" target="_blank" rel="noopener">Rua Felisberto Soares, 197 — Centro<br>Canela/RS · 95680-000</a></b>
+        </div>
+        <div class="info-row">
+          <span>Reservas</span>
+          <b><a class="wa" href="https://wa.me/555499026758?text=Ol%C3%A1!%20Gostaria%20de%20reservar%20uma%20mesa%20na%20Casa%20197." target="_blank" rel="noopener">WhatsApp (54) 9902-6758</a></b>
+        </div>
+        <div class="info-row">
+          <span>Instagram</span>
+          <b><a href="https://www.instagram.com/casa197canela" target="_blank" rel="noopener">@casa197canela</a></b>
+        </div>
+        <div class="info-row" style="border-bottom:none">
+          <span>Horários</span>
+          <b style="font-size:1.05rem;line-height:1.5">Galeto — somente ao meio-dia<br>Fondue e à la carte — almoço e jantar</b>
+        </div>
+      </div>
+      <div class="reveal">
+        <img src="img/mesavin.webp" alt="Mesa posta com vinho, galeto e massas na Casa 197" loading="lazy" style="width:100%;aspect-ratio:4/3;object-fit:cover">
+        <div style="margin-top:22px;display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn btn-primary wa" href="https://wa.me/555499026758?text=Ol%C3%A1!%20Gostaria%20de%20reservar%20uma%20mesa%20na%20Casa%20197." target="_blank" rel="noopener">
+            <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.8-.9-3-1.6-4.2-3.6-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.3 5.2 4.6 1.9.8 2.7.9 3.7.8.6-.1 1.8-.7 2-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.4M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2m0 1.8a8.2 8.2 0 0 1 6.9 12.6l-.4.6.6 2.3-2.4-.6-.5.3A8.2 8.2 0 1 1 12 3.8"/></svg>
+            Reservar mesa
+          </a>
+          <a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&amp;query=Casa+197+Galeteria+e+Fondue,+Rua+Felisberto+Soares,+197,+Centro,+Canela+-+RS" target="_blank" rel="noopener">Como chegar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA FINAL ============ -->
+<section class="final">
+  <div class="bg" style="background-image:url('img/fonwide.webp')"></div>
+  <div class="wrap">
+    <p class="eyebrow" style="color:var(--brass-2)">Reserve sua mesa</p>
+    <h2>Sua mesa em Canela<br>está a uma mensagem</h2>
+    <div class="rule center"></div>
+    <p class="lead">Fale com a gente pelo WhatsApp, diga o dia, o horário e quantas pessoas — a gente confirma na hora.</p>
+    <div style="margin-top:36px">
+      <a class="btn btn-primary wa" href="https://wa.me/555499026758?text=Ol%C3%A1!%20Gostaria%20de%20reservar%20uma%20mesa%20na%20Casa%20197." target="_blank" rel="noopener">
+        <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.8-.9-3-1.6-4.2-3.6-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.3 5.2 4.6 1.9.8 2.7.9 3.7.8.6-.1 1.8-.7 2-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.4M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2m0 1.8a8.2 8.2 0 0 1 6.9 12.6l-.4.6.6 2.3-2.4-.6-.5.3A8.2 8.2 0 1 1 12 3.8"/></svg>
+        Reservar pelo WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <a class="brand" href="#topo"><b>CASA 197</b><small>Galeteria &amp; Fondue</small></a>
+      <div>
+        Rua Felisberto Soares, 197 — Centro<br>Canela/RS · 95680-000
+      </div>
+      <div class="foot-links">
+        <a href="#fondue">Fondue</a>
+        <a href="#galeto">Galeteria</a>
+        <a href="#carte">À la carte</a>
+        <a href="https://www.instagram.com/casa197canela" target="_blank" rel="noopener">@casa197canela</a>
+        <a class="wa" href="https://wa.me/555499026758" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+    <div class="foot-btm">© <span id="ano">2026</span> Casa 197 Galeteria &amp; Fondue · Canela/RS</div>
+  </div>
+</footer>
+
+<div class="mobile-bar">
+  <a class="btn btn-primary wa" href="https://wa.me/555499026758?text=Ol%C3%A1!%20Gostaria%20de%20reservar%20uma%20mesa%20na%20Casa%20197." target="_blank" rel="noopener">
+    <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.5 14.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.1-.2.3-.7 1-.9 1.2-.2.2-.3.2-.6.1-1.8-.9-3-1.6-4.2-3.6-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5 0-.2-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.3 5.2 4.6 1.9.8 2.7.9 3.7.8.6-.1 1.8-.7 2-1.5.3-.7.3-1.3.2-1.5-.1-.1-.3-.2-.6-.4M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2m0 1.8a8.2 8.2 0 0 1 6.9 12.6l-.4.6.6 2.3-2.4-.6-.5.3A8.2 8.2 0 1 1 12 3.8"/></svg>
+    Reservar pelo WhatsApp
+  </a>
+</div>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Restaurant",
+  "name":"Casa 197 Galeteria & Fondue",
+  "servesCuisine":["Fondue","Italiana","Galeteria"],
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"Rua Felisberto Soares, 197 - Centro",
+    "addressLocality":"Canela",
+    "addressRegion":"RS",
+    "postalCode":"95680-000",
+    "addressCountry":"BR"
+  },
+  "telephone":"+555499026758",
+  "sameAs":["https://www.instagram.com/casa197canela"],
+  "acceptsReservations":"https://wa.me/555499026758"
+}
+</script>
+
+<script>
+// header sólido ao rolar
+var hdr=document.getElementById('hdr');
+function onScroll(){ hdr.classList.toggle('solid', window.scrollY>60); }
+onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
+
+// ano no rodapé
+document.getElementById('ano').textContent=new Date().getFullYear();
+
+// reveal ao entrar na tela
+var io=new IntersectionObserver(function(es){
+  es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} });
+},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+
+/* ---------------------------------------------------------------
+   CONVERSÃO GOOGLE ADS — cole aqui a tag global (gtag.js) da conta
+   e troque AW-XXXXXXXXX/XXXXXXXXXXXX pelo rótulo da conversão
+   "Clique no WhatsApp". Sem a tag instalada, nada quebra.
+----------------------------------------------------------------*/
+document.querySelectorAll('a.wa').forEach(function(a){
+  a.addEventListener('click',function(){
+    if(typeof gtag==='function'){
+      gtag('event','conversion',{'send_to':'AW-XXXXXXXXX/XXXXXXXXXXXX'});
+    }
+    if(typeof fbq==='function'){ fbq('track','Contact'); }
+  });
+});
+</script>
+</body>
+</html>
